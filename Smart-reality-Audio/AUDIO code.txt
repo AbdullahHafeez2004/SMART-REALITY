@@ -1,0 +1,21 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class (c# script name) : MonoBehaviour
+{
+    public Button (button name);
+    public AudioSource audioSource;
+
+    void Start()
+    {
+        (button name).onClick.AddListener(PlayAudio); // Add listener for button click
+    }
+
+    void PlayAudio()
+    {
+        if (audioSource.clip != null)
+        {
+            audioSource.Play(); // Play the audio clip
+        }
+    }
+}
